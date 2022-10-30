@@ -1,0 +1,17 @@
+---
+- name: Configure OpenGL/Vulkan Development Environment
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Install Development Packages
+      ansible.builtin.package:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - libglfw3-dev
+        - libglm-dev
+        - libvulkan-dev
+        - spirv-tools
+        - vulkan-tools
+        - vulkan-validationlayers-dev
