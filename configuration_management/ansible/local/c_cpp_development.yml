@@ -1,0 +1,12 @@
+---
+- name: Configure C/C++ Development Environment
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Install Development Packages
+      ansible.builtin.package:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - build-essential
