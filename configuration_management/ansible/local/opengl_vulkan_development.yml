@@ -12,6 +12,12 @@
         - libglfw3-dev
         - libglm-dev
         - libvulkan-dev
+        - python3-pip
         - spirv-tools
         - vulkan-tools
         - vulkan-validationlayers-dev
+
+    - name: Install Python Modules
+      ansible.builtin.pip:
+        name: glad
+
