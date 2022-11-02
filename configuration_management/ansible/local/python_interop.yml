@@ -1,0 +1,10 @@
+---
+- name: Configure Python <-> C Interop
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Install Venv
+      ansible.builtin.package:
+        name: python3-venv
+
