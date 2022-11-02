@@ -15,3 +15,7 @@
 **/config.status
 **/.deps/
 **/compile
+
+# Python VEnv
+**/.venv/
+
