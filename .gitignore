@@ -14,6 +14,7 @@
 **/config.log
 **/config.status
 **/.deps/
+**/.dirstamp
 **/compile
 
 # Python VEnv
