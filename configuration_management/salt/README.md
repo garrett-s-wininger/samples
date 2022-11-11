@@ -7,5 +7,5 @@ where SaltStack is the preferred SCM of choice.
 To apply any of the states contained within this directory, you can use the
 following:
 
-  salt-call state.apply <sls file name> --local
+    salt-call state.apply <sls file name> --local
 
