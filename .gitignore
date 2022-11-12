@@ -16,6 +16,7 @@
 **/.deps/
 **/.dirstamp
 **/compile
+**/target/*
 
 # Python VEnv
 **/.venv/
