@@ -3,4 +3,5 @@ configure_c_cpp_development:
     - pkgs:
       - autoconf
       - build-essential
+      - gdb
 
