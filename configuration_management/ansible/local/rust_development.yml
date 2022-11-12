@@ -1,0 +1,10 @@
+---
+- name: Configure Rust Development
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Install Rust Development Tools
+      ansible.builtin.package:
+        name: rustc
+        state: present
