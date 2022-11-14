@@ -20,10 +20,12 @@ linux_investigation_tools:
       - linux-cpupower
       - lldpad
       - lshw
+      - lsof
       - lsscsi
       - ltrace
       - msr-tools
       - mtr
+      - nicstat
       - numactl
       - pchar
       - pciutils
