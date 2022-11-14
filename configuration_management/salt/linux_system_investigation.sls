@@ -1,0 +1,34 @@
+linux_investigation_tools:
+  pkg.installed:
+    - pkgs:
+      - bpfcc-tools
+      - bpftrace
+      - blktrace
+      - cpuid
+      - dmidecode
+      - dstat
+      - ethtool
+      - fatrace
+      - fio
+      - hdparm
+      - hping3
+      - hwloc
+      - iotop
+      - iperf3
+      - linux-cpupower
+      - lldpad
+      - lsscsi
+      - msr-tools
+      - mtr
+      - numactl
+      - pchar
+      - pciutils
+      - schedtool
+      - smartmontools
+      - snmp
+      - sysbench
+      - sysstat
+      - tiptop
+      - traceroute
+      - util-linux
+      - wireless-tools
