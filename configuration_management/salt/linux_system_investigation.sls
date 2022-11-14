@@ -12,12 +12,16 @@ linux_investigation_tools:
       - fio
       - hdparm
       - hping3
+      - hwinfo
       - hwloc
+      - ifstat
       - iotop
       - iperf3
       - linux-cpupower
       - lldpad
+      - lshw
       - lsscsi
+      - ltrace
       - msr-tools
       - mtr
       - numactl
@@ -26,6 +30,7 @@ linux_investigation_tools:
       - schedtool
       - smartmontools
       - snmp
+      - strace
       - sysbench
       - sysstat
       - tiptop
