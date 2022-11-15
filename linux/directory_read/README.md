@@ -1,3 +1,3 @@
-# Directory Read
+# Pipe
 
-Provides an example of listing directories through available LInux APIs.
+Provides an example of communicating between processes through a pipe.
