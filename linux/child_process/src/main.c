@@ -11,26 +11,26 @@ int main(int argc, char** argv)
     if (forked_pid == 0)
     {
         printf("CHILD: Entered new process\n");
-        exit(0);
+        exit(EXIT_SUCCESS);
     }
     else if (forked_pid > 0)
     {
         printf("PARENT: Waiting on process (%d)...\n", forked_pid);
         
         int status;
-        pid_t changed_pid = waitpid(forked_pid, &status, 0);
 
-        if (changed_pid != forked_pid)
+        if (waitpid(forked_pid, &status, 0) == -1)
         {
-            fprintf(stderr, "ERROR: Received error while waiting on child process\n");
-            exit(-1);
+            perror("Received error while waiting on child process");
+            exit(EXIT_FAILURE);
         }
 
         printf("PARENT: Child exited successfully\n");
+        exit(EXIT_SUCCESS);
     }
     else
     {
-        fprintf(stderr, "ERROR: Unable to fork child process\n");
-        exit(-1);
+        perror("Unable to fork child process");
+        exit(EXIT_FAILURE);
     }
 }

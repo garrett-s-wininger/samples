@@ -11,8 +11,8 @@ int main(int argc, char** argv)
 
     if (!dir)
     {
-        fprintf(stderr, "ERROR: Unable to open specified directiory\n");
-        exit(1);
+        perror("Unable to open specified directiory");
+        exit(EXIT_FAILURE);
     }
 
     printf("Entries in current directory:\n\n");
@@ -26,9 +26,9 @@ int main(int argc, char** argv)
         {
             if (errno != 0)
             {
+                perror("Could not read from directory stream\n");
                 closedir(dir);
-                fprintf(stderr, "ERROR: Could not read from directory stream\n");
-                return 1;
+                exit(EXIT_FAILURE);
             }
             else
             {
