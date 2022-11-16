@@ -23,6 +23,7 @@
         - hwinfo
         - hwloc
         - ifstat
+        - iftop
         - iotop
         - iperf3
         - linux-cpupower
@@ -43,6 +44,7 @@
         - strace
         - sysbench
         - sysstat
+        - tcpdump
         - tiptop
         - traceroute
         - util-linux

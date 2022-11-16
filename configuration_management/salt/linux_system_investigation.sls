@@ -15,6 +15,7 @@ linux_investigation_tools:
       - hwinfo
       - hwloc
       - ifstat
+      - iftop
       - iotop
       - iperf3
       - linux-cpupower
@@ -35,6 +36,7 @@ linux_investigation_tools:
       - strace
       - sysbench
       - sysstat
+      - tcpdump
       - tiptop
       - traceroute
       - util-linux
