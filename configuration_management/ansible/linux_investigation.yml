@@ -9,6 +9,7 @@
         name: "{{ item }}"
         state: present
       loop:
+        - bind9-dnsutils
         - bpfcc-tools
         - bpftrace
         - blktrace

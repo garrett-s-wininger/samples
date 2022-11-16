@@ -1,6 +1,7 @@
 linux_investigation_tools:
   pkg.installed:
     - pkgs:
+      - bind9-dnsutils
       - bpfcc-tools
       - bpftrace
       - blktrace
