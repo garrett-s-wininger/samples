@@ -1,0 +1,10 @@
+---
+- name: Configure PHP Development
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Install PHP Development Tools
+      ansible.builtin.package:
+        name: php 
+        state: present
