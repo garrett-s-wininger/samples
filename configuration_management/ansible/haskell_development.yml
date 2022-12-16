@@ -1,0 +1,10 @@
+---
+- name: Configure Haskell Development
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Install Haskell Development Tools
+      ansible.builtin.package:
+        name: ghc
+        state: present
