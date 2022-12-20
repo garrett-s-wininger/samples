@@ -6,5 +6,8 @@
   tasks:
     - name: Install Rust Development Tools
       ansible.builtin.package:
-        name: rustc
+        name: "{{ item }}"
         state: present
+      loop:
+        - cargo
+        - rustc
