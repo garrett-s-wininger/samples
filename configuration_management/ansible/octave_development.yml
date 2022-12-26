@@ -1,0 +1,10 @@
+---
+- name: Configure Octave Development
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Install Octave Development Tools
+      ansible.builtin.package:
+        name: octave 
+        state: present
